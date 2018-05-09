@@ -1,0 +1,280 @@
+/*
+ * Footer
+ */
+footer[role=contentinfo] {
+	position: relative;
+	display: block;
+	background: $black;
+	height: 35rem;
+	z-index: 4;
+	font-size: 1rem;
+	font-style: italic;
+
+  // All links.
+	a {
+		&:link {
+			color: $footer_gray;
+			transition: .2s color ease-in;
+			text-decoration: none;
+			font-style: italic;
+		}
+
+		&:visited {
+			color: $footer_gray;
+
+		}
+		&:active {
+			color: $footer_gray;
+
+		}
+
+		&:hover {
+			color: $white;
+		}
+	}
+
+  // The logo and cityscape before the footer content.
+	.y-and-proud {
+		background-color: $cardinal;
+		background-image: url("../../media/images/y-and-proud-bg.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		display: block;
+		height: 12.75rem;
+
+		.brand {
+			text-align: center;
+			padding: 2.75rem 0 1rem;
+
+			img {
+				height: 5.5rem;
+			}
+		}
+
+		.skyline {
+      margin: 0 auto;
+      display: block;
+      height: 4rem;
+			text-align: center;
+      background: url("../../media/images/skyline.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+
+			img {
+				height: 3.75rem;
+			}
+		}
+	}
+
+  // Row 1 & 2 need a border.
+	.row-1, .row-2, {
+		border-bottom: 1px $footer_gray solid;
+	}
+
+  /*
+   * The contents of the footer with information.
+   *
+   * Each section has it's own sytnax; '.footer-*'.
+   * These sections are wrapped within the 'col-*' class.
+   */
+   .footer-contents {
+		margin: 2rem 0 0;
+		color: $footer_gray;
+
+		.footer-ysu-heading {
+			font-family: $lato_font;
+			font-weight: 300;
+			font-size: 1.35rem;
+			font-style: normal;
+		}
+
+		.footer-social-media {
+			ul {
+				text-align: right;
+				margin-right: 1rem;
+
+				li {
+					display: inline-block;
+				  margin-right: 1.25rem;
+
+          a {
+            color: $white;
+            text-indent: 100%;
+            color: transparent;
+
+            &:before {
+              font-style: normal !important;
+              font-family: $fa_icon;
+              color: $white;
+            }
+          }
+
+          .facebook {
+            &:before {
+              content: "\f09a";
+            }
+          }
+          .instagram {
+            &:before {
+              content: "\f16d";
+            }
+          }
+
+          .twitter {
+            &:before {
+              content: "\f099";
+            }
+          }
+        }
+			}
+		}
+
+		.footer-copyright-privacy {
+			text-align: right;
+
+			ul {
+				li {
+					display: inline-block;
+
+					&:before {
+						content: "|";
+						margin: 0 .5rem;
+						font-style: normal;
+					}
+					&:first-child {
+						&:before {
+							content: "";
+							margin: 0;
+						}
+					}
+				}
+
+				.copyright {
+					font-style: normal;
+				}
+			}
+		}
+
+		.footer-address-info {
+			ul {
+				li {
+					display: inline-block;
+
+					&:before {
+						content: "-";
+						margin: 0 .5rem;
+					}
+
+					&:first-child {
+						&:before {
+							content: "";
+							margin: 0;
+						}
+					}
+				}
+			}
+		}
+
+		.footer-ohio-means-jobs {
+			text-align: right;
+			position: relative;
+
+
+			ul {
+				position: absolute;
+				right: -1rem;
+				padding-left: 6rem;
+				top: 0;
+				background: $black;
+				display: block;
+
+				li {
+					margin: 1rem 0;
+				}
+			}
+
+		}
+
+		.footer-links {
+			ul {
+				li {
+					display: inline-block;
+					border-left: 1px solid $footer_gray;
+					padding: 0rem .55rem;
+					margin: .5rem 0;
+
+					&:first-child {
+						border-left: 0;
+						padding-left: 0;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+
+  footer {
+    text-align: center !important;
+    height: 50rem !important;
+
+    ul {
+      text-align: center !important;
+      li {
+        text-align: center !important;
+        display: inline-block !important;
+      }
+    }
+
+    .row {
+      border-bottom: none !important;
+    }
+  }
+
+  .footer-address-info {
+    ul {
+      li {
+				padding: 0.5rem 0;
+        &:before {
+          content: "" !important;
+        }
+      }
+    }
+  }
+
+  .footer-ohio-means-jobs {
+    ul {
+      position: static !important;
+      background: transparent !important;
+      right: 0;
+      padding-left: 0 !important;
+      top: 0;
+      display: block;
+
+
+
+			li {
+				padding: 0 .5rem;
+			}
+    }
+  }
+}
+
+.footer-ohio-means-jobs ul {
+    width: 11.25rem;
+}
+
+.ohio-means-jobs-logo {
+	a {
+		background: url('../../media/images/ohio-means-jobs.png');
+		background-repeat: no-repeat;
+		height: 2rem;
+		width: 100%;
+		display: block;
+
+		i {
+			display: none;
+		}
+	}
+}

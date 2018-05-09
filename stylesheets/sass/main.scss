@@ -1,0 +1,252 @@
+/*
+ * Start main content
+ */
+
+main[role=main] {
+	position: relative;
+	display: block;
+	min-height: 90vh;
+	color: $dove-gray;
+
+	// Edit for Pretty Print.
+
+	pre.prettyprint {
+		padding: 1rem !important;
+		margin: 1rem;
+		font-size: .9rem;
+		font-family: $mono-font;
+		border: 1px solid $cardinal;
+		background: rgba($light_gray, .2);
+	}
+
+
+
+	.edit-link {
+		margin-bottom: 1rem;
+
+	}
+
+	.shards-top {
+		background-image: url("../../media/images/shards-top.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		display: block;
+		position: absolute;
+		width: 100%;
+		height: 40rem;
+		z-index: -1;
+	}
+
+	.shards-bottom {
+		background-image: url("../../media/images/shards-bottom.png");
+		background-repeat: no-repeat;
+		background-size: 100%;
+		background-position: 0 100%;
+		display: block;
+		position: absolute;
+		width: 100%;
+		bottom: -10px;
+		height: 35rem;
+		z-index: -1;
+	}
+
+	.wrapper {
+		z-index: 1000;
+	}
+
+	footer {
+		height: 2rem !important;
+		padding:  0rem 0 2rem;
+		text-align: left !important;
+	}
+
+	section, article {
+		font-size: 1.15rem;
+		line-height: 1.375;
+
+			// Basic HTML elements; headings, links, lists, images, etc.
+
+			a {
+				color: $cardinal;
+				transition: color .2s ease-in;
+
+				&:hover {
+					color: $monarch;
+				}
+			}
+
+			ul, ol, dl {
+				padding-left: 4rem;
+			}
+
+			ol {
+				counter-reset: item;
+				padding-left: 3rem !important;
+
+			}
+
+			dt {
+				padding-left: 2rem;
+			}
+
+			ul li {
+				list-style-type: disc;
+			}
+
+			ol li {
+
+				&:before {
+             				content: counter(item) ". ";
+             				counter-increment: item;
+             				color: $cardinal;
+        			 }
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				font-style: normal;
+				font-weight: normal;
+				line-height: 1.4;
+				margin-bottom: 0.5rem;
+				margin-top: 0.1rem;
+				text-rendering: optimizeLegibility;
+			}
+
+			h2 {
+				font-family: $crimson-font;
+				font-style: italic;
+				font-size: 2.825rem;
+				line-height: 2.8125rem;
+				color: $black;
+			}
+
+			h3 {
+				font-family: $lato-font;
+				font-size: 1.65rem;
+				text-transform: uppercase;
+				font-weight: 400;
+				color: $cardinal;
+			}
+
+			h4 {
+				font-family: $lato-font;
+				font-size: 1.65rem;
+				text-transform: uppercase;
+				font-weight: 400;
+				color: $black;
+			}
+
+			h5 {
+				font-family: $lato-font;
+				font-size: 1.05rem;
+				text-transform: uppercase;
+				font-weight: 700;
+				color: $black;
+			}
+
+			h6 {
+				font-family: $lato-font;
+				font-size: 1.05rem;
+				text-transform: uppercase;
+				font-weight: 400;
+				color: $black;
+			}
+
+			.section-heading {
+				font-weight: 400;
+				border-bottom: 1px solid $monarch;
+				padding: .5rem 0;
+				margin-bottom: 1rem;
+				letter-spacing: 0.125rem;
+			}
+
+			p {
+				margin-bottom:1rem;
+				line-height: 1.85rem;
+			}
+
+			table {
+				font-family: $lato-font;
+
+				thead {
+					font-weight: 700;
+
+					th {
+						background: $tan;
+						padding: 1rem;
+						align: left;
+					}
+				}
+
+				tr {
+					td {
+						padding: 1rem;
+						text-align: left;
+					}
+
+					&:nth-child(even) {
+						background: $tan;
+					}
+				}
+			}
+	}
+}
+
+
+#nav-below {
+	margin-top: 5rem;
+	width: 100%;
+	font-family: $lato-font;
+	font-weight: 200;
+	font-size: 1.4rem;
+
+
+	.fa-angle-left {
+		padding-right: 1rem;
+	}
+
+	.fa-angle-right {
+		padding-left: 1rem;
+	}
+
+	.section1, .section2 {
+		display: block;
+		width: 100%;
+	}
+
+	.section1 {
+		border-bottom: 1px solid $cardinal;
+		padding-bottom: .2rem;
+	}
+
+	.section2 {
+		padding-top: .2rem;
+	}
+
+	a {
+		padding: 0rem;
+		text-decoration: none;
+	}
+
+	.nav-previous-title, .nav-next-title {
+		display: inline-block;
+		font-family: $noto-font;
+		font-size: 1rem;
+
+	}
+
+	.nav-next-title {
+		float:right;
+		text-align: right;
+	}
+
+	.nav-previous, .nav-next {
+		display: inline-block;
+		text-transform: uppercase;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+	}
+
+}

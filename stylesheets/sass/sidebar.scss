@@ -1,0 +1,226 @@
+/*
+ * Sidebar
+ */
+aside {
+		nav {
+			width: 98%;
+			padding-bottom: 2rem;
+			> * {
+			  &:last-child {
+					border-bottom: 1px solid $cardinal;
+				}
+			}
+
+			.current_page_item, .current-menu-item {
+				> a {
+					color: $dove-gray !important;
+
+					&:before {
+						content: "\f101";
+						font-size: 1.25rem;
+						font-family: $fa-icon;
+						padding-right: 1rem;
+					}
+
+					&:after {
+						content: "" !important;
+					}
+				}
+			}
+
+			.current_page_item, .current-menu-item  + .menu-item-has-children {
+				> a {
+					color: $dove-gray !important;
+
+					&:before {
+						content: "\f103";
+						font-size: 1.25rem;
+						font-family: $fa-icon;
+						padding-right: 1rem;
+					}
+
+					&:after {
+						content: "" !important;
+					}
+				}
+			}
+
+
+
+
+			ul li ul {
+
+				.current_page_item, .current-menu-item {
+					> a {
+						color: $dove-gray !important;
+
+						&:before {
+							content: "" !important;
+							padding: 0 !important;
+						}
+
+						&:after {
+							content: "" !important;
+							padding: 0 !important;
+						}
+					}
+				}
+			}
+
+			a {
+				padding: .7rem 0rem !important;
+				color: $cardinal;
+				text-decoration: none;
+				font-size: 1.35rem;
+				font-family: $noto-font !important;
+				display:inline-block;
+				border-top: 1px solid $cardinal;
+				width: 100%;
+				text-transform: uppercase;
+				line-height: 2rem;
+				position: relative;
+
+				&:after {
+					position: absolute;
+					font-size: .9rem;
+					padding-left: 1rem;
+					content: "\f054";
+					font-family: $fa-icon;
+				}
+			}
+
+			ul li > ul li a {
+				padding-left: 2rem !important;
+				border-top: 0px !important;
+
+			}
+		}
+
+	.widget-container {
+		background-color: $monarch;
+		color: $white;
+		margin-bottom: 1rem;
+
+
+
+		a {
+			color: $white;
+
+			&:hover {
+				color: $white;
+			}
+		}
+
+		h3 {
+			display: block;
+			margin: 0;
+			background-color: #a71930;
+			color: $white;
+			font-family: $pt-sans-font;
+			font-weight: 400;
+			font-style: italic;
+			font-size: 1.667rem;
+			line-height: 2.375rem;
+			padding: 1rem;
+		}
+
+		ul > li {
+			padding: 1rem;
+			line-height: 1.375rem;
+		}
+	}
+
+	.searchform {
+		border-top: 9px solid $hampton;
+		background: #f2f0e8 !important;
+		padding: 1rem;
+
+		input[type=text] {
+			background: $white !important;
+			padding: 0.3125rem 0.5rem !important;
+			width: 90% !important;
+			border: 1px solid $cardinal !important;
+			font-family: $crimson_font !important;
+			font-style: italic !important;
+			color: $gray !important;
+			box-shadow: 0 0 0 transparent !important;
+			display: inline-block !important;
+		}
+
+		input[type=submit] {
+			text-align: center;
+			margin: 0 auto;
+			padding: 2rem;
+			margin-top: 1rem !important;
+			width: 97%;
+		}
+	}
+
+
+	.widget_calendar {
+		h3 {
+			display: none;
+		}
+	}
+
+	.calendar_wrap {
+	}
+
+	#wp-calendar {
+
+
+
+		caption {
+			text-align: left !important;
+			margin: 0;
+			background-color: #a71930;
+    			color: white;
+    			font-family: "PT Sans Narrow", sans-serif;
+    			font-weight: 400;
+    			font-style: italic;
+    			font-size: 1.667rem;
+    			line-height: 2.375rem;
+    			padding: 1rem;
+			background: $cardinal;
+			padding-bottom: 1.25rem;
+			padding-top: 1rem;
+
+			&:before {
+				content: "Calendar - ";
+			}
+		}
+
+		width: 100%;
+		height: 10rem;
+
+		thead {
+			th {
+				vertical-align: middle;
+			}
+		}
+
+		tr {
+			width: 100%;
+			th, td {
+				height: 2rem !important;
+				width: 2rem !important;
+				text-align: center;
+				vertical-align: middle;
+
+				a {
+					display: cell;
+					padding: .25rem;
+					width: 100%;
+					background: $teak;
+					color: $cardinal;
+					text-decoration: none;
+					font-weight: 500;
+					transition: background .2s;
+					&:hover {
+						background: $hampton;
+					}
+				}
+			}
+		}
+	}
+}

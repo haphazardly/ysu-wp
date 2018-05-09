@@ -1,0 +1,43 @@
+/*
+ * Imports, colors, fonts, icons, etc.
+ * Style guide: https://company-39565.frontify.com/d/F6XsymKzrJ2l/brand-guide#/basics/
+ */
+
+// Primary color palette
+$cardinal:    rgb(167,25,48);   // Cardinal
+$monarch:     rgb(105,7,23);    // Monarch
+$black:       rgb(0,0,0);       // Black
+$dove-gray:   rgb(109,109,109); // Dove Gray
+
+// Secondary color palette variables
+$teak:        rgb(180,151,90);  // Teak
+$hampton:     rgb(229,215,170); // Hampton
+$satin-linen: rgb(242,240,232); // Satin Linen
+$teal-blue:   rgb(6,83,116);    // Teal Blue
+$picton-blue: rgb(93,172,223);  // Picton Blue
+
+// Other
+$white: rgb(0,0,0);
+$gray:  rgb(105,105,105);
+$light_gray: rgb(204,204,204);
+$white: rgb(255,255,255);
+
+$tan: rgb(242,240,232);
+
+$footer_gray: rgb(160,160,160);
+
+// Font and icons imports
+@import 'https://fonts.googleapis.com/css?family=Lato:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Noto+Sans';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css';
+@import 'https://fonts.googleapis.com/css?family=Source+Code+Pro';
+
+
+$noto-font: "Noto Sans", sans-serif;
+$lato-font: "Lato", sans-serif;
+$crimson-font: "Crimson Text", serif;
+$minion-font: "Minion-Pro", serif;
+$pt-sans-font: "PT Sans Narrow", sans-serif;
+$mono-font: 'Source Code Pro', monospace;
+
+$fa-icon: "FontAwesome";

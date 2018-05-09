@@ -1,0 +1,67 @@
+/******************************************/
+/*                                        */
+/* Author: chrisslagle.com                */
+/* Stylesheet: Responsive                 */
+/* Base: responsivegridsystem.com         */
+/*                                        */
+/******************************************/
+
+// Variables to change
+$columns: 13;
+$spacing: 1.2%;
+
+// Loop through the columns and print grid
+@for $i from 1 through $columns {
+
+	@if $i < $columns {
+		.col-#{$i} {
+			width: ((100 / $columns) * $i) - ((((($columns - $i) * 10%) / 100%) * $spacing) / ($columns * .1%)) * 1%;
+		}
+	} @else {
+		.col-#{$i} {
+			width: ((100 / $columns) * $i) * 1%;
+		}
+  	}
+}
+
+// Similar to bootstrap
+.row {
+	clear: both;
+	padding: 0px $spacing;
+	margin: 0px;
+}
+
+.row:before,
+.row:after { content:""; display:table; }
+.row:after { clear:both;}
+.row { zoom:1; /* For IE 6/7 */ }
+
+.col {
+	display: block;
+	float:left;
+	margin: 0 0 1% $spacing;
+	padding:1em 0em;
+}
+
+.col:first-child { margin-left: 0; }
+
+// Same for the resize grid
+@media only screen and (max-width: 1100px) {
+
+	@for $i from 1 through $columns {
+
+		@if $i < $columns {
+			.col-#{$i} {
+				width: 100%;
+			}
+  		} @else {
+			.col-#{$i} {
+				width: ((100 / $columns) * $i) * 1%;
+			}
+	  	}
+	}
+
+	.col {
+		margin: 0 0 1% 0%;
+	}
+}

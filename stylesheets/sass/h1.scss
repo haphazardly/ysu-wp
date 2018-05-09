@@ -1,0 +1,96 @@
+// Page title
+.page-title-wrap {
+  margin: 1.75rem 0;
+  text-align: center;
+}
+
+.bracketed,
+.page-title-wrap h1,
+.alpha {
+  display: inline-block;
+  position: relative;
+  padding: 0 3.75rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.bracketed:before,
+.page-title-wrap h1:before,
+.alpha:before,
+.bracketed:after,
+.page-title-wrap h1:after,
+.alpha:after {
+  content: '';
+  position: absolute;
+  top: -.6rem;
+  bottom: -.6rem;
+  width: 0.3125rem;
+  border-width: 2px;
+  border-style: solid;
+  padding: 1.5px;
+}
+
+.bracketed:before,
+.page-title-wrap h1:before,
+.alpha:before {
+  left: 0;
+  border-right: none;
+}
+
+.bracketed:after,
+.page-title-wrap h1:after,
+.alpha:after {
+  right: 0;
+  border-left: none;
+}
+
+.light.bracketed:before,
+.page-title-wrap h1.light:before,
+.header.search h1:before,
+.page-title.has-banner h1:before,
+.light.alpha:before,
+.light.bracketed:after,
+h1.light:after,
+.header.search h1:after,
+.page-title.has-banner h1:after,
+.light.alpha:after {
+  border-color: #fff;
+}
+
+.tall.bracketed:before,
+.page-title-wrap
+h1.tall:before,
+.tall.alpha:before,
+.tall.bracketed:after,
+h1.tall:after,
+.tall.alpha:after {
+  top: -.1em;
+  bottom: -.1em;
+}
+
+.taller.bracketed:before,
+.page-title-wrap
+h1.taller:before,
+.taller.alpha:before,
+.taller.bracketed:after,
+h1.taller:after,
+.taller.alpha:after {
+  top: -.3em;
+  bottom: -.3em;
+}
+
+.page-title-wrap h1,
+.alpha {
+  color: #696969;
+  font-family: $minion-font;
+  font-style: italic;
+  font-size: 3em;
+}
+
+h1:before,
+.page-title-wrap h1:after,
+.alpha:before,
+.alpha:after {
+  border-color: #a71930;
+
+}
